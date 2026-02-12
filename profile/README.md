@@ -4,6 +4,8 @@
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
 
+**3 repositories · 2 SKELETON · 1 DESIGN_ONLY**
+
 [Purpose](#purpose) | [Philosophy](#philosophy) | [Current Status](#current-status) | [Planned Initiatives](#planned-initiatives) | [Connection to the Eight-Organ System](#connection-to-the-eight-organ-system)
 
 ---
@@ -24,11 +26,11 @@ This is community as creative infrastructure: the deliberate construction of spa
 
 ## Current Status
 
-ORGAN-VI is in **early development**. The organizational infrastructure exists ([organvm-vi-koinonia](https://github.com/organvm-vi-koinonia) on GitHub), but substantive community repositories are being designed rather than deployed. This is intentional — community spaces should launch with active programming and clear formats, not empty repositories waiting for participants to arrive.
+ORGAN-VI is in **early development**. The organizational infrastructure exists ([organvm-vi-koinonia](https://github.com/organvm-vi-koinonia) on GitHub) with skeleton repositories deployed. Community spaces should launch with active programming and clear formats, not empty repositories waiting for participants to arrive.
 
-**Planned repositories:**
-- `salon-series` — Structured salon events exploring themes across the eight-organ system
-- `reading-groups` — Collaborative reading and discussion infrastructure
+**Repositories:**
+- `salon-archive` — Structured salon events exploring themes across the eight-organ system (SKELETON)
+- `reading-group-curriculum` — Collaborative reading and discussion infrastructure (SKELETON)
 
 ## Planned Initiatives
 
@@ -36,21 +38,17 @@ ORGAN-VI is in **early development**. The organizational infrastructure exists (
 
 Recurring events organized around themes that cross organ boundaries. Each salon pairs a theoretical concern (ORGAN-I) with a practical demonstration (ORGAN-II or III), creating a structured space for discussion that is neither lecture nor open-ended conversation. The salon format draws from the European tradition of curated intellectual gathering: a prepared provocation, a demonstration or reading, and a structured exchange that produces documented outcomes rather than evaporating after the event.
 
-Salon topics will emerge from the system's own tensions — places where theoretical commitments meet implementation reality, where artistic ambition encounters technical constraint, where the question of what constitutes a "product" in a creative-institutional context remains genuinely open.
-
 ### Reading Groups
 
-Collaborative close reading of the system's foundational documents, academic references, and related work. Reading groups provide the interpretive community that prevents a solo-practice system from becoming insular. Planned formats include:
+Collaborative close reading of the system's foundational documents, academic references, and related work. Planned formats include:
 
 - **Internal readings** — Close examination of the organvm system's own documents (genesis transcripts, specifications, architectural decisions)
 - **External readings** — Engagement with the academic and creative traditions the system draws from (systems theory, institutional design, recursive epistemology)
 - **Cross-organ readings** — Joint sessions where participants from different organ contexts read the same material through their respective disciplinary lenses
 
-### Community Governance
-
-As ORGAN-VI matures, its governance structures will be developed in coordination with ORGAN-IV (Orchestration). Participation norms, contribution guidelines, and the protocols for translating community insights back into the system will be documented as living specifications rather than fixed rules.
-
 ## Connection to the Eight-Organ System
+
+The organvm system spans 81 repositories across 8 organizations, ~320K words of documentation, and 16 published essays.
 
 | Organ | Relationship to ORGAN-VI |
 |-------|--------------------------|
@@ -64,10 +62,12 @@ As ORGAN-VI matures, its governance structures will be developed in coordination
 
 **Dependency direction:** ORGAN-VI consumes from I, II, III (no back-edges). Community activities respond to what the system produces; they do not dictate upstream organ priorities.
 
+> **Read the public process:** [organvm-v-logos.github.io/public-process](https://organvm-v-logos.github.io/public-process/)
+
 ---
 
 **Organization:** [organvm-vi-koinonia](https://github.com/organvm-vi-koinonia)
 **System:** [organvm eight-organ system](https://github.com/meta-organvm)
 **Author:** [@4444J99](https://github.com/4444J99)
 
-*Last updated: 2026-02-10*
+*CONSOLIDATION-II Sprint 2026-02-12*
