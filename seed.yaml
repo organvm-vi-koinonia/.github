@@ -1,0 +1,18 @@
+# seed.yaml — Automation Contract for organvm-vi-koinonia/.github
+# Schema: seed/v1.0
+# Generated: 2026-02-12 (AUTONOMY Sprint)
+# Category: infrastructure
+
+schema_version: "1.0"
+organ: VI
+organ_name: Community
+repo: .github
+org: organvm-vi-koinonia
+
+metadata:
+  implementation_status: PRODUCTION
+  tier: infrastructure
+  promotion_status: LOCAL
+  last_validated: "2026-02-10"
+  generated: "2026-02-12"
+  sprint: "AUTONOMY"
