@@ -1,5 +1,7 @@
 # ORGAN-VI: Koinonia — Community
 
+_Community infrastructure and facilitation tools_
+
 [![ORGAN-VI: Koinonia](https://img.shields.io/badge/ORGAN--VI-Koinonia-4a148c?style=flat-square)](https://github.com/organvm-vi-koinonia)
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
