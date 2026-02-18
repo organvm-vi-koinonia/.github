@@ -1,6 +1,7 @@
 name: Dispatch Receiver
 
-# Receives cross-org events from orchestration-start-here and other organs
+# Receives cross-org events from orchestration-start-here and other organs.
+# Creates tracking issues in THIS repo (.github) as a centralized board.
 on:
   repository_dispatch:
     types:
@@ -32,15 +33,14 @@ jobs:
       - name: Create reading group discussion issue
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const payload = context.payload.client_payload || {};
             const title = payload.essay_title || 'New essay published';
             const url = payload.essay_url || '';
             const organ = payload.source_organ || 'ORGAN-V';
             await github.rest.issues.create({
-              owner: 'organvm-vi-koinonia',
-              repo: 'reading-group-curriculum',
+              owner: context.repo.owner,
+              repo: context.repo.repo,
               title: `[${organ}] Schedule discussion: ${title}`,
               body: [
                 `## New Essay Published`,
@@ -48,6 +48,7 @@ jobs:
                 `**Source:** ${organ}`,
                 `**Title:** ${title}`,
                 `**URL:** ${url}`,
+                `**Target repo:** reading-group-curriculum`,
                 ``,
                 `### Action Required`,
                 `- [ ] Review essay for curriculum relevance`,
@@ -67,14 +68,13 @@ jobs:
       - name: Create compliance check issue
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const payload = context.payload.client_payload || {};
             const rules = payload.changed_rules || 'unspecified';
             await github.rest.issues.create({
-              owner: 'organvm-vi-koinonia',
-              repo: 'community-hub',
-              title: `[ORGAN-IV] Governance rules updated`,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `[ORGAN-IV] Governance rules updated — compliance check`,
               body: [
                 `## Governance Update Received`,
                 ``,
@@ -100,16 +100,13 @@ jobs:
       - name: Create promotion review issue
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const payload = context.payload.client_payload || {};
             const repo = payload.repo || 'unknown';
             const details = payload.details || 'No details provided';
-            const target = (repo === '.github' || repo === 'unknown')
-              ? 'community-hub' : repo;
             await github.rest.issues.create({
-              owner: 'organvm-vi-koinonia',
-              repo: target,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
               title: `[META] Promotion recommended: ${repo}`,
               body: [
                 `## Promotion Recommendation`,
