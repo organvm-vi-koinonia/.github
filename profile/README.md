@@ -6,7 +6,7 @@ _Community infrastructure and facilitation tools_
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
 
-**3 repositories · 2 SKELETON · 1 DESIGN_ONLY**
+**5 repositories · 4 PRODUCTION · 1 PROTOTYPE**
 
 [Purpose](#purpose) | [Philosophy](#philosophy) | [Current Status](#current-status) | [Planned Initiatives](#planned-initiatives) | [Connection to the Eight-Organ System](#connection-to-the-eight-organ-system)
 
@@ -28,11 +28,17 @@ This is community as creative infrastructure: the deliberate construction of spa
 
 ## Current Status
 
-ORGAN-VI is in **early development**. The organizational infrastructure exists ([organvm-vi-koinonia](https://github.com/organvm-vi-koinonia) on GitHub) with skeleton repositories deployed. Community spaces should launch with active programming and clear formats, not empty repositories waiting for participants to arrive.
+ORGAN-VI is **operational**. The shared database layer is built with models, migrations, and seed data. CI pipelines run across all repos. The FastAPI flagship portal (`community-hub`) integrates the salon archive, curricula browser, and stats dashboard into a single service.
 
 **Repositories:**
-- `salon-archive` — Structured salon events exploring themes across the eight-organ system (SKELETON)
-- `reading-group-curriculum` — Collaborative reading and discussion infrastructure (SKELETON)
+
+| Repo | Role | Status |
+|------|------|--------|
+| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula browser, stats dashboard | PRODUCTION (flagship) |
+| [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | PRODUCTION |
+| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | PRODUCTION |
+| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | PRODUCTION |
+| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | PROTOTYPE |
 
 ## Planned Initiatives
 
@@ -50,7 +56,7 @@ Collaborative close reading of the system's foundational documents, academic ref
 
 ## Connection to the Eight-Organ System
 
-The organvm system spans 81 repositories across 8 organizations, ~320K words of documentation, and 16 published essays.
+The organvm system spans 79 repositories across 8 organizations, ~289K words of documentation, and 10 published essays.
 
 | Organ | Relationship to ORGAN-VI |
 |-------|--------------------------|
@@ -72,4 +78,4 @@ The organvm system spans 81 repositories across 8 organizations, ~320K words of 
 **System:** [organvm eight-organ system](https://github.com/meta-organvm)
 **Author:** [@4444J99](https://github.com/4444J99)
 
-*CONSOLIDATION-II Sprint 2026-02-12*
+*ORGAN-VI Status Update 2026-02-18*
