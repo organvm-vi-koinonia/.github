@@ -6,7 +6,7 @@ _Community infrastructure and facilitation tools_
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
 
-**5 repositories · 4 CANDIDATE · 1 PROTOTYPE**
+**5 repositories · 5 CANDIDATE**
 
 [Purpose](#purpose) | [Philosophy](#philosophy) | [Current Status](#current-status) | [Planned Initiatives](#planned-initiatives) | [Connection to the Eight-Organ System](#connection-to-the-eight-organ-system)
 
@@ -38,7 +38,7 @@ ORGAN-VI is **operational**. The shared database layer is built with models, mig
 | [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | CANDIDATE |
 | [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | CANDIDATE |
 | [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | CANDIDATE |
-| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | PROTOTYPE |
+| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | CANDIDATE |
 
 ## Planned Initiatives
 
