@@ -34,7 +34,7 @@ ORGAN-VI is **operational**. The shared database layer is built with models, mig
 
 | Repo | Role | Status |
 |------|------|--------|
-| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | CANDIDATE (flagship) |
+| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | CANDIDATE (flagship) — [**live**](https://community-hub-8p8t.onrender.com) |
 | [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | CANDIDATE |
 | [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | CANDIDATE |
 | [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | CANDIDATE |
