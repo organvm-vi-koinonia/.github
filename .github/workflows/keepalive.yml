@@ -1,0 +1,30 @@
+name: Keepalive Ping
+
+# Ping community-hub /health every 14 minutes during business hours
+# to prevent Render free tier from sleeping.
+
+on:
+  schedule:
+    # Every 14 minutes, 07:00-23:00 UTC (roughly covers US + EU business hours)
+    - cron: '*/14 7-23 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping community-hub health endpoint
+        run: |
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" \
+            --max-time 30 \
+            https://community-hub-8p8t.onrender.com/health)
+
+          echo "HTTP status: $HTTP_CODE"
+
+          if [ "$HTTP_CODE" -eq 200 ]; then
+            echo "Service is healthy"
+          elif [ "$HTTP_CODE" -eq 000 ]; then
+            echo "::warning::Service unreachable (timeout or DNS failure)"
+          else
+            echo "::warning::Unexpected status code: $HTTP_CODE"
+          fi

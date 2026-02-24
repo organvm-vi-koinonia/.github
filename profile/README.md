@@ -6,7 +6,7 @@ _Community infrastructure and facilitation tools_
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
 
-**5 repositories · 5 PUBLIC_PROCESS**
+**5 repositories · 5 PUBLIC_PROCESS · 382 tests**
 
 [Purpose](#purpose) | [Philosophy](#philosophy) | [Current Status](#current-status) | [Planned Initiatives](#planned-initiatives) | [Connection to the Eight-Organ System](#connection-to-the-eight-organ-system)
 
@@ -28,13 +28,15 @@ This is community as creative infrastructure: the deliberate construction of spa
 
 ## Current Status
 
-ORGAN-VI is **operational**. The shared database layer is built with models, migrations, and seed data running on Neon PostgreSQL. CI pipelines run across all repos. The FastAPI flagship portal (`community-hub`) integrates the salon archive, curricula browser, contributor profiles, full-text search, adaptive syllabi, Atom feeds, and WebSocket live rooms into a single service.
+ORGAN-VI is **operational**. The shared database layer is built with models, migrations, and seed data running on Neon PostgreSQL. CI pipelines (with PostgreSQL service containers) run across all repos. The FastAPI flagship portal (`community-hub`) integrates the salon archive, curricula browser, contributor profiles, full-text search, adaptive syllabi, Atom feeds, and WebSocket live rooms into a single service. **382 tests** across 5 repos.
+
+> **Note:** `community-hub` is deployed on Render's free tier. The service sleeps after inactivity and may take 30-60 seconds to respond on first request (cold start). A keep-alive workflow pings `/health` every 14 minutes during business hours to minimize this.
 
 **Repositories:**
 
 | Repo | Role | Status |
 |------|------|--------|
-| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | PUBLIC_PROCESS (flagship) — [**live**](https://community-hub-8p8t.onrender.com) |
+| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | PUBLIC_PROCESS (flagship) — [deployed](https://community-hub-8p8t.onrender.com) |
 | [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | PUBLIC_PROCESS |
 | [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | PUBLIC_PROCESS |
 | [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | PUBLIC_PROCESS |
