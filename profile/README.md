@@ -6,7 +6,7 @@ _Community infrastructure and facilitation tools_
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
 
-**5 repositories · 5 CANDIDATE**
+**5 repositories · 5 PUBLIC_PROCESS**
 
 [Purpose](#purpose) | [Philosophy](#philosophy) | [Current Status](#current-status) | [Planned Initiatives](#planned-initiatives) | [Connection to the Eight-Organ System](#connection-to-the-eight-organ-system)
 
@@ -34,11 +34,11 @@ ORGAN-VI is **operational**. The shared database layer is built with models, mig
 
 | Repo | Role | Status |
 |------|------|--------|
-| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | CANDIDATE (flagship) — [**live**](https://community-hub-8p8t.onrender.com) |
-| [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | CANDIDATE |
-| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | CANDIDATE |
-| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | CANDIDATE |
-| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | CANDIDATE |
+| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | PUBLIC_PROCESS (flagship) — [**live**](https://community-hub-8p8t.onrender.com) |
+| [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | PUBLIC_PROCESS |
+| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | PUBLIC_PROCESS |
+| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | PUBLIC_PROCESS |
+| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | PUBLIC_PROCESS |
 
 ## Planned Initiatives
 
@@ -78,4 +78,4 @@ The organvm system spans 101 repositories across 8 organizations.
 **System:** [organvm eight-organ system](https://github.com/meta-organvm)
 **Author:** [@4444J99](https://github.com/4444J99)
 
-*ORGAN-VI Status Update 2026-02-24*
+*ORGAN-VI Status Update 2026-02-24 — Promoted to PUBLIC_PROCESS (System-Wide Activation Sprint)*
