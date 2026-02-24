@@ -6,7 +6,7 @@ _Community infrastructure and facilitation tools_
 
 > The gathering space for the organvm system — salons, reading groups, and collaborative encounters where theory meets practice through shared inquiry.
 
-**5 repositories · 4 PRODUCTION · 1 PROTOTYPE**
+**5 repositories · 4 CANDIDATE · 1 PROTOTYPE**
 
 [Purpose](#purpose) | [Philosophy](#philosophy) | [Current Status](#current-status) | [Planned Initiatives](#planned-initiatives) | [Connection to the Eight-Organ System](#connection-to-the-eight-organ-system)
 
@@ -28,16 +28,16 @@ This is community as creative infrastructure: the deliberate construction of spa
 
 ## Current Status
 
-ORGAN-VI is **operational**. The shared database layer is built with models, migrations, and seed data. CI pipelines run across all repos. The FastAPI flagship portal (`community-hub`) integrates the salon archive, curricula browser, and stats dashboard into a single service.
+ORGAN-VI is **operational**. The shared database layer is built with models, migrations, and seed data running on Neon PostgreSQL. CI pipelines run across all repos. The FastAPI flagship portal (`community-hub`) integrates the salon archive, curricula browser, contributor profiles, full-text search, adaptive syllabi, Atom feeds, and WebSocket live rooms into a single service.
 
 **Repositories:**
 
 | Repo | Role | Status |
 |------|------|--------|
-| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula browser, stats dashboard | PRODUCTION (flagship) |
-| [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | PRODUCTION |
-| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | PRODUCTION |
-| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | PRODUCTION |
+| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | CANDIDATE (flagship) |
+| [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) | Shared SQLAlchemy models, Alembic migrations, seed data | CANDIDATE |
+| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | CANDIDATE |
+| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | CANDIDATE |
 | [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | PROTOTYPE |
 
 ## Planned Initiatives
@@ -56,7 +56,7 @@ Collaborative close reading of the system's foundational documents, academic ref
 
 ## Connection to the Eight-Organ System
 
-The organvm system spans 79 repositories across 8 organizations, ~289K words of documentation, and 10 published essays.
+The organvm system spans 101 repositories across 8 organizations.
 
 | Organ | Relationship to ORGAN-VI |
 |-------|--------------------------|
@@ -78,4 +78,4 @@ The organvm system spans 79 repositories across 8 organizations, ~289K words of 
 **System:** [organvm eight-organ system](https://github.com/meta-organvm)
 **Author:** [@4444J99](https://github.com/4444J99)
 
-*ORGAN-VI Status Update 2026-02-18*
+*ORGAN-VI Status Update 2026-02-24*
