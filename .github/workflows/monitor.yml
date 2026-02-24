@@ -1,0 +1,127 @@
+name: Service Monitor
+
+# Deep health check for community-hub. Runs every 6 hours.
+# Creates a GitHub issue if the service is degraded or unreachable.
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  deep-health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deep health check
+        id: health
+        run: |
+          set +e
+
+          # Step 1: Basic reachability (with generous timeout for cold start)
+          echo "--- Basic health check ---"
+          HEALTH=$(curl -s --max-time 60 \
+            https://community-hub-8p8t.onrender.com/health)
+          HEALTH_CODE=$?
+
+          if [ "$HEALTH_CODE" -ne 0 ]; then
+            echo "status=unreachable" >> "$GITHUB_OUTPUT"
+            echo "detail=curl exit code $HEALTH_CODE (timeout or DNS failure)" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Basic health: $HEALTH"
+
+          # Step 2: Deep health (DB connectivity + data counts)
+          echo "--- Deep health check ---"
+          DEEP=$(curl -s --max-time 30 \
+            https://community-hub-8p8t.onrender.com/api/health/deep)
+          DEEP_CODE=$?
+
+          if [ "$DEEP_CODE" -ne 0 ]; then
+            echo "status=degraded" >> "$GITHUB_OUTPUT"
+            echo "detail=Deep health endpoint unreachable" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "Deep health: $DEEP"
+
+          DB_STATUS=$(echo "$DEEP" | python3 -c "import sys,json; print(json.load(sys.stdin).get('database','unknown'))" 2>/dev/null || echo "parse_error")
+          APP_STATUS=$(echo "$DEEP" | python3 -c "import sys,json; print(json.load(sys.stdin).get('status','unknown'))" 2>/dev/null || echo "parse_error")
+          SALON_COUNT=$(echo "$DEEP" | python3 -c "import sys,json; print(json.load(sys.stdin).get('counts',{}).get('salons',0))" 2>/dev/null || echo "0")
+
+          echo "DB: $DB_STATUS | App: $APP_STATUS | Salons: $SALON_COUNT"
+
+          if [ "$DB_STATUS" != "connected" ]; then
+            echo "status=degraded" >> "$GITHUB_OUTPUT"
+            echo "detail=Database status: $DB_STATUS" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          if [ "$APP_STATUS" != "ok" ]; then
+            echo "status=degraded" >> "$GITHUB_OUTPUT"
+            echo "detail=App status: $APP_STATUS (DB: $DB_STATUS)" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Step 3: Verify search endpoint responds
+          echo "--- Search endpoint check ---"
+          SEARCH=$(curl -s --max-time 15 -o /dev/null -w "%{http_code}" \
+            "https://community-hub-8p8t.onrender.com/api/search?q=recursion")
+
+          if [ "$SEARCH" -ne 200 ]; then
+            echo "status=degraded" >> "$GITHUB_OUTPUT"
+            echo "detail=Search endpoint returned HTTP $SEARCH" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          echo "status=healthy" >> "$GITHUB_OUTPUT"
+          echo "detail=All checks passed (DB: connected, salons: $SALON_COUNT, search: OK)" >> "$GITHUB_OUTPUT"
+
+      - name: Report status
+        run: |
+          echo "Service status: ${{ steps.health.outputs.status }}"
+          echo "Detail: ${{ steps.health.outputs.detail }}"
+
+      - name: Check for existing alert issue
+        if: steps.health.outputs.status != 'healthy'
+        id: existing
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          OPEN=$(gh issue list \
+            --repo "$GITHUB_REPOSITORY" \
+            --search "community-hub service alert in:title" \
+            --state open --json number --limit 1 2>/dev/null || echo "[]")
+          COUNT=$(echo "$OPEN" | python3 -c "import sys,json; print(len(json.load(sys.stdin)))" 2>/dev/null || echo "0")
+          echo "open_alerts=$COUNT" >> "$GITHUB_OUTPUT"
+
+      - name: Create alert issue
+        if: steps.health.outputs.status != 'healthy' && steps.existing.outputs.open_alerts == '0'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STATUS: ${{ steps.health.outputs.status }}
+          DETAIL: ${{ steps.health.outputs.detail }}
+        run: |
+          gh issue create \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "community-hub service alert: $STATUS" \
+            --body "## Service Health Alert
+
+          **Status:** $STATUS
+          **Detail:** $DETAIL
+          **Detected:** $(date -u +%Y-%m-%dT%H:%M:%SZ)
+          **Workflow run:** $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID
+
+          ### Triage
+
+          - [ ] Check Render dashboard for service status
+          - [ ] Check Neon dashboard for database connectivity
+          - [ ] Verify DATABASE_URL environment variable
+          - [ ] Check recent deployments for breaking changes
+
+          ---
+          *Auto-created by service monitor workflow*" \
+            --label "auto-dispatch"
