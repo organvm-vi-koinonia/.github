@@ -34,17 +34,20 @@ Stack: Python 3.11+, SQLAlchemy 2.0+, PostgreSQL, FastAPI, Alembic.
 <!-- ORGANVM:AUTO:START -->
 ## System Context (auto-generated — do not edit)
 
-**Organ:** ORGAN-VI (Community) | **Tier:** infrastructure | **Status:** LOCAL
-**Org:** `organvm-vi-koinonia` | **Repo:** `.github`
+**Organ:** ORGAN-I (Theory) | **Tier:** infrastructure | **Status:** LOCAL
+**Org:** `unknown` | **Repo:** `.github`
 
 ### Edges
-- Org-level infrastructure — no direct data edges
+- **Produces** → `unknown`: unknown (event: `distribution-completed`)
+- **Produces** → `unknown`: unknown (event: `press-release`)
+- **Produces** → `unknown`: unknown (event: `grant-update`)
+- **Produces** → `unknown`: unknown (event: `newsletter-published`)
 
-### Siblings in Community
-`community-hub`, `koinonia-db`, `salon-archive`, `reading-group-curriculum`, `adaptive-personal-syllabus`
+### Siblings in Theory
+`recursive-engine--generative-entity`, `organon-noumenon--ontogenetic-morphe`, `auto-revision-epistemic-engine`, `narratological-algorithmic-lenses`, `call-function--ontological`, `sema-metra--alchemica-mundi`, `system-governance-framework`, `cognitive-archaelogy-tribunal`, `a-recursive-root`, `radix-recursiva-solve-coagula-redi`, `nexus--babel-alexandria-`, `reverse-engine-recursive-run`, `4-ivi374-F0Rivi4`, `cog-init-1-0-`, `collective-persona-operations` ... and 4 more
 
 ### Governance
-- Community infrastructure layer. Consumes from ORGAN-I, II, III. No back-edges.
+- Foundational theory layer. No upstream dependencies.
 
-*Last synced: 2026-02-24T12:00:00Z*
+*Last synced: 2026-02-24T12:41:28Z*
 <!-- ORGANVM:AUTO:END -->
