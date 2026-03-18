@@ -86,3 +86,15 @@ The organvm system spans 101 repositories across 8 organizations.
 *ORGAN-VI Status Update 2026-02-24 — Promoted to PUBLIC_PROCESS (System-Wide Activation Sprint)*
 
 *Activation Audit 2026-06-18 — actually-live; ship-now; org profile re-probed HTTP 200*
+
+<!-- PORTFOLIO-HUB-START -->
+---
+
+<div align="center">
+
+**Explore the System**
+
+[Portfolio](https://4444j99.github.io/portfolio/) · [System Directory](https://4444j99.github.io/portfolio/directory/) · [49 Essays](https://organvm-v-logos.github.io/public-process/) · [Knowledge Base](https://organvm-i-theoria.github.io/my-knowledge-base/) · [Consult](https://4444j99.github.io/portfolio/consult/)
+
+</div>
+<!-- PORTFOLIO-HUB-END -->
