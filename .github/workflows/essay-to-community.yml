@@ -10,7 +10,7 @@ on:
     types:
       - essay-published
   schedule:
-    - cron: '0 11 * * *'
+    - cron: "0 11 * * *"
   workflow_dispatch:
 
 jobs:

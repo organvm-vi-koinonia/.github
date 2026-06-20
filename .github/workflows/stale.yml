@@ -2,7 +2,7 @@ name: Stale Issues and PRs
 
 on:
   schedule:
-    - cron: '0 9 * * 1'
+    - cron: "0 9 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
             activity occurs.
           days-before-stale: 60
           days-before-close: 14
-          exempt-issue-labels: 'pinned,evergreen,omega,blocked'
-          exempt-pr-labels: 'pinned,evergreen,work-in-progress'
-          stale-issue-label: 'stale'
-          stale-pr-label: 'stale'
+          exempt-issue-labels: "pinned,evergreen,omega,blocked"
+          exempt-pr-labels: "pinned,evergreen,work-in-progress"
+          stale-issue-label: "stale"
+          stale-pr-label: "stale"

@@ -50,7 +50,7 @@ Community contributions follow an invitation-only participation model. Contact t
 
 ---
 
-*Part of the [organvm eight-organ system](https://github.com/meta-organvm)*
+_Part of the [organvm eight-organ system](https://github.com/meta-organvm)_
 
 ## Documentation Standards
 

@@ -3,8 +3,8 @@
 ## Supported Versions
 
 | Version | Supported |
-|---------|-----------|
-| Latest  | Yes |
+| ------- | --------- |
+| Latest  | Yes       |
 
 ## Reporting a Vulnerability
 
@@ -22,17 +22,18 @@
 Email security concerns to: **security@organvm.dev**
 
 Include:
+
 - Description of the vulnerability
 - Steps to reproduce
 - Potential impact
 
 ## Response Timeline
 
-| Timeline | Action |
-|----------|--------|
-| Within 48 hours | Acknowledgment |
-| Within 7 days | Assessment and severity classification |
-| Within 30 days | Fix deployed (critical/high severity) |
+| Timeline        | Action                                 |
+| --------------- | -------------------------------------- |
+| Within 48 hours | Acknowledgment                         |
+| Within 7 days   | Assessment and severity classification |
+| Within 30 days  | Fix deployed (critical/high severity)  |
 
 ## Security Best Practices
 
@@ -43,5 +44,5 @@ Include:
 
 ---
 
-*Part of the [organvm eight-organ system](https://github.com/meta-organvm)*
-*Last updated: 2026-02-10*
+_Part of the [organvm eight-organ system](https://github.com/meta-organvm)_
+_Last updated: 2026-02-10_

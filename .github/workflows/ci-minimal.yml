@@ -12,6 +12,9 @@ jobs:
     steps:
       - uses: actions/checkout@v6
 
+      - name: Check formatting with Prettier
+        run: npx prettier --check "**/*.{yml,yaml,md}"
+
       - name: Check README exists
         run: |
           if [ -f README.md ]; then

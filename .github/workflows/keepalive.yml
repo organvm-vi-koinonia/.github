@@ -6,7 +6,7 @@ name: Keepalive Ping
 on:
   schedule:
     # Every 14 minutes, 07:00-23:00 UTC (roughly covers US + EU business hours)
-    - cron: '*/14 7-23 * * *'
+    - cron: "*/14 7-23 * * *"
   workflow_dispatch:
 
 jobs:

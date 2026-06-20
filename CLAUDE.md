@@ -36,24 +36,28 @@ Stack: Python 3.11+, SQLAlchemy 2.0+, PostgreSQL, FastAPI, Alembic.
 Issue [organvm-vi-koinonia/.github#12](https://github.com/organvm-vi-koinonia/.github/issues/12) classifies this repository as **actually-live** with a **ship-now** decision. The public org profile at `https://github.com/organvm-vi-koinonia` is the shipped surface, and the current audit record lives in `docs/activation-audit-2026-06-18.md`.
 
 <!-- ORGANVM:AUTO:START -->
+
 ## System Context (auto-generated — do not edit)
 
 **Organ:** ORGAN-I (Theory) | **Tier:** infrastructure | **Status:** GRADUATED
 **Org:** `organvm-vi-koinonia` | **Repo:** `.github`
 
 ### Edges
+
 - **Produces** → `ORGAN-IV, ORGAN-V`: unspecified (event: `distribution-completed`)
 - **Produces** → `unspecified`: unspecified (event: `press-release`)
 - **Produces** → `unspecified`: unspecified (event: `grant-update`)
 - **Produces** → `ORGAN-V`: unspecified (event: `newsletter-published`)
 
 ### Siblings in Theory
+
 `recursive-engine--generative-entity`, `organon-noumenon--ontogenetic-morphe`, `auto-revision-epistemic-engine`, `narratological-algorithmic-lenses`, `call-function--ontological`, `sema-metra--alchemica-mundi`, `cognitive-archaelogy-tribunal`, `a-recursive-root`, `radix-recursiva-solve-coagula-redi`, `nexus--babel-alexandria`, `4-ivi374-F0Rivi4`, `cog-init-1-0-`, `linguistic-atomization-framework`, `my-knowledge-base`, `scalable-lore-expert` ... and 10 more
 
 ### Governance
+
 - Foundational theory layer. No upstream dependencies.
 
-*Last synced: 2026-04-14T21:32:11Z*
+_Last synced: 2026-04-14T21:32:11Z_
 
 ## Active Handoff Protocol
 
@@ -67,16 +71,17 @@ NOT be trusted. A different agent will verify your output against these constrai
 ## Session Review Protocol
 
 At the end of each session that produces or modifies files:
+
 1. Run `organvm session review --latest` to get a session summary
 2. Check for unimplemented plans: `organvm session plans --project .`
 3. Export significant sessions: `organvm session export <id> --slug <slug>`
 4. Run `organvm prompts distill --dry-run` to detect uncovered operational patterns
 
 Transcripts are on-demand (never committed):
+
 - `organvm session transcript <id>` — conversation summary
 - `organvm session transcript <id> --unabridged` — full audit trail
 - `organvm session prompts <id>` — human prompts only
-
 
 ## System Library
 
@@ -84,69 +89,66 @@ Plans: 269 indexed | Chains: 5 available | SOPs: 121 active
 Discover: `organvm plans search <query>` | `organvm chains list` | `organvm sop lifecycle`
 Library: `meta-organvm/praxis-perpetua/library/`
 
-
 ## Active Directives
 
-| Scope | Phase | Name | Description |
-|-------|-------|------|-------------|
-| system | any | atomic-clock | The Atomic Clock |
-| system | any | execution-sequence | Execution Sequence |
-| system | any | multi-agent-dispatch | Multi-Agent Dispatch |
-| system | any | session-handoff-avalanche | Session Handoff Avalanche |
-| system | any | system-loops | System Loops |
-| system | any | prompting-standards | Prompting Standards |
-| system | any | research-standards-bibliography | APPENDIX: Research Standards Bibliography |
-| system | any | phase-closing-and-forward-plan | METADOC: Phase-Closing Commemoration & Forward Attack Plan |
-| system | any | research-standards | METADOC: Architectural Typology & Research Standards |
-| system | any | sop-ecosystem | METADOC: SOP Ecosystem — Taxonomy, Inventory & Coverage |
-| system | any | autonomous-content-syndication | SOP: Autonomous Content Syndication (The Broadcast Protocol) |
-| system | any | autopoietic-systems-diagnostics | SOP: Autopoietic Systems Diagnostics (The Mirror of Eternity) |
-| system | any | background-task-resilience | background-task-resilience |
-| system | any | cicd-resilience-and-recovery | SOP: CI/CD Pipeline Resilience & Recovery |
-| system | any | community-event-facilitation | SOP: Community Event Facilitation (The Dialectic Crucible) |
-| system | any | context-window-conservation | context-window-conservation |
-| system | any | conversation-to-content-pipeline | SOP — Conversation-to-Content Pipeline |
-| system | any | cross-agent-handoff | SOP: Cross-Agent Session Handoff |
-| system | any | cross-channel-publishing-metrics | SOP: Cross-Channel Publishing Metrics (The Echo Protocol) |
-| system | any | data-migration-and-backup | SOP: Data Migration and Backup Protocol (The Memory Vault) |
-| system | any | document-audit-feature-extraction | SOP: Document Audit & Feature Extraction |
-| system | any | dynamic-lens-assembly | SOP: Dynamic Lens Assembly |
-| system | any | essay-publishing-and-distribution | SOP: Essay Publishing & Distribution |
-| system | any | formal-methods-applied-protocols | SOP: Formal Methods Applied Protocols |
-| system | any | formal-methods-master-taxonomy | SOP: Formal Methods Master Taxonomy (The Blueprint of Proof) |
-| system | any | formal-methods-tla-pluscal | SOP: Formal Methods — TLA+ and PlusCal Verification (The Blueprint Verifier) |
-| system | any | generative-art-deployment | SOP: Generative Art Deployment (The Gallery Protocol) |
-| system | any | market-gap-analysis | SOP: Full-Breath Market-Gap Analysis & Defensive Parrying |
-| system | any | mcp-server-fleet-management | SOP: MCP Server Fleet Management (The Server Protocol) |
-| system | any | multi-agent-swarm-orchestration | SOP: Multi-Agent Swarm Orchestration (The Polymorphic Swarm) |
-| system | any | network-testament-protocol | SOP: Network Testament Protocol (The Mirror Protocol) |
-| system | any | open-source-licensing-and-ip | SOP: Open Source Licensing and IP (The Commons Protocol) |
-| system | any | performance-interface-design | SOP: Performance Interface Design (The Stage Protocol) |
-| system | any | pitch-deck-rollout | SOP: Pitch Deck Generation & Rollout |
-| system | any | polymorphic-agent-testing | SOP: Polymorphic Agent Testing (The Adversarial Protocol) |
-| system | any | promotion-and-state-transitions | SOP: Promotion & State Transitions |
-| system | any | recursive-study-feedback | SOP: Recursive Study & Feedback Loop (The Ouroboros) |
-| system | any | repo-onboarding-and-habitat-creation | SOP: Repo Onboarding & Habitat Creation |
-| system | any | research-to-implementation-pipeline | SOP: Research-to-Implementation Pipeline (The Gold Path) |
-| system | any | security-and-accessibility-audit | SOP: Security & Accessibility Audit |
-| system | any | session-self-critique | session-self-critique |
-| system | any | smart-contract-audit-and-legal-wrap | SOP: Smart Contract Audit and Legal Wrap (The Ledger Protocol) |
-| system | any | source-evaluation-and-bibliography | SOP: Source Evaluation & Annotated Bibliography (The Refinery) |
-| system | any | stranger-test-protocol | SOP: Stranger Test Protocol |
-| system | any | strategic-foresight-and-futures | SOP: Strategic Foresight & Futures (The Telescope) |
-| system | any | styx-pipeline-traversal | SOP: Styx Pipeline Traversal (The 7-Organ Transmutation) |
-| system | any | system-dashboard-telemetry | SOP: System Dashboard Telemetry (The Panopticon Protocol) |
-| system | any | the-descent-protocol | the-descent-protocol |
-| system | any | the-membrane-protocol | the-membrane-protocol |
-| system | any | theoretical-concept-versioning | SOP: Theoretical Concept Versioning (The Epistemic Protocol) |
-| system | any | theory-to-concrete-gate | theory-to-concrete-gate |
-| system | any | typological-hermeneutic-analysis | SOP: Typological & Hermeneutic Analysis (The Archaeology) |
+| Scope  | Phase | Name                                 | Description                                                                  |
+| ------ | ----- | ------------------------------------ | ---------------------------------------------------------------------------- |
+| system | any   | atomic-clock                         | The Atomic Clock                                                             |
+| system | any   | execution-sequence                   | Execution Sequence                                                           |
+| system | any   | multi-agent-dispatch                 | Multi-Agent Dispatch                                                         |
+| system | any   | session-handoff-avalanche            | Session Handoff Avalanche                                                    |
+| system | any   | system-loops                         | System Loops                                                                 |
+| system | any   | prompting-standards                  | Prompting Standards                                                          |
+| system | any   | research-standards-bibliography      | APPENDIX: Research Standards Bibliography                                    |
+| system | any   | phase-closing-and-forward-plan       | METADOC: Phase-Closing Commemoration & Forward Attack Plan                   |
+| system | any   | research-standards                   | METADOC: Architectural Typology & Research Standards                         |
+| system | any   | sop-ecosystem                        | METADOC: SOP Ecosystem — Taxonomy, Inventory & Coverage                      |
+| system | any   | autonomous-content-syndication       | SOP: Autonomous Content Syndication (The Broadcast Protocol)                 |
+| system | any   | autopoietic-systems-diagnostics      | SOP: Autopoietic Systems Diagnostics (The Mirror of Eternity)                |
+| system | any   | background-task-resilience           | background-task-resilience                                                   |
+| system | any   | cicd-resilience-and-recovery         | SOP: CI/CD Pipeline Resilience & Recovery                                    |
+| system | any   | community-event-facilitation         | SOP: Community Event Facilitation (The Dialectic Crucible)                   |
+| system | any   | context-window-conservation          | context-window-conservation                                                  |
+| system | any   | conversation-to-content-pipeline     | SOP — Conversation-to-Content Pipeline                                       |
+| system | any   | cross-agent-handoff                  | SOP: Cross-Agent Session Handoff                                             |
+| system | any   | cross-channel-publishing-metrics     | SOP: Cross-Channel Publishing Metrics (The Echo Protocol)                    |
+| system | any   | data-migration-and-backup            | SOP: Data Migration and Backup Protocol (The Memory Vault)                   |
+| system | any   | document-audit-feature-extraction    | SOP: Document Audit & Feature Extraction                                     |
+| system | any   | dynamic-lens-assembly                | SOP: Dynamic Lens Assembly                                                   |
+| system | any   | essay-publishing-and-distribution    | SOP: Essay Publishing & Distribution                                         |
+| system | any   | formal-methods-applied-protocols     | SOP: Formal Methods Applied Protocols                                        |
+| system | any   | formal-methods-master-taxonomy       | SOP: Formal Methods Master Taxonomy (The Blueprint of Proof)                 |
+| system | any   | formal-methods-tla-pluscal           | SOP: Formal Methods — TLA+ and PlusCal Verification (The Blueprint Verifier) |
+| system | any   | generative-art-deployment            | SOP: Generative Art Deployment (The Gallery Protocol)                        |
+| system | any   | market-gap-analysis                  | SOP: Full-Breath Market-Gap Analysis & Defensive Parrying                    |
+| system | any   | mcp-server-fleet-management          | SOP: MCP Server Fleet Management (The Server Protocol)                       |
+| system | any   | multi-agent-swarm-orchestration      | SOP: Multi-Agent Swarm Orchestration (The Polymorphic Swarm)                 |
+| system | any   | network-testament-protocol           | SOP: Network Testament Protocol (The Mirror Protocol)                        |
+| system | any   | open-source-licensing-and-ip         | SOP: Open Source Licensing and IP (The Commons Protocol)                     |
+| system | any   | performance-interface-design         | SOP: Performance Interface Design (The Stage Protocol)                       |
+| system | any   | pitch-deck-rollout                   | SOP: Pitch Deck Generation & Rollout                                         |
+| system | any   | polymorphic-agent-testing            | SOP: Polymorphic Agent Testing (The Adversarial Protocol)                    |
+| system | any   | promotion-and-state-transitions      | SOP: Promotion & State Transitions                                           |
+| system | any   | recursive-study-feedback             | SOP: Recursive Study & Feedback Loop (The Ouroboros)                         |
+| system | any   | repo-onboarding-and-habitat-creation | SOP: Repo Onboarding & Habitat Creation                                      |
+| system | any   | research-to-implementation-pipeline  | SOP: Research-to-Implementation Pipeline (The Gold Path)                     |
+| system | any   | security-and-accessibility-audit     | SOP: Security & Accessibility Audit                                          |
+| system | any   | session-self-critique                | session-self-critique                                                        |
+| system | any   | smart-contract-audit-and-legal-wrap  | SOP: Smart Contract Audit and Legal Wrap (The Ledger Protocol)               |
+| system | any   | source-evaluation-and-bibliography   | SOP: Source Evaluation & Annotated Bibliography (The Refinery)               |
+| system | any   | stranger-test-protocol               | SOP: Stranger Test Protocol                                                  |
+| system | any   | strategic-foresight-and-futures      | SOP: Strategic Foresight & Futures (The Telescope)                           |
+| system | any   | styx-pipeline-traversal              | SOP: Styx Pipeline Traversal (The 7-Organ Transmutation)                     |
+| system | any   | system-dashboard-telemetry           | SOP: System Dashboard Telemetry (The Panopticon Protocol)                    |
+| system | any   | the-descent-protocol                 | the-descent-protocol                                                         |
+| system | any   | the-membrane-protocol                | the-membrane-protocol                                                        |
+| system | any   | theoretical-concept-versioning       | SOP: Theoretical Concept Versioning (The Epistemic Protocol)                 |
+| system | any   | theory-to-concrete-gate              | theory-to-concrete-gate                                                      |
+| system | any   | typological-hermeneutic-analysis     | SOP: Typological & Hermeneutic Analysis (The Archaeology)                    |
 
 Linked skills: cicd-resilience-and-recovery, continuous-learning-agent, evaluation-to-growth, genesis-dna, multi-agent-workforce-planner, promotion-and-state-transitions, quality-gate-baseline-calibration, repo-onboarding-and-habitat-creation, structural-integrity-audit
 
-
 **Prompting (Anthropic)**: context 200K tokens, format: XML tags, thinking: extended thinking (budget_tokens)
-
 
 ## Entity Identity (Ontologia)
 
@@ -154,37 +156,34 @@ Linked skills: cicd-resilience-and-recovery, continuous-learning-agent, evaluati
 
 Resolve: `organvm ontologia resolve .github` | History: `organvm ontologia history ent_repo_01KKKX3RVH13015KN8GT0VY8VE`
 
-
 ## Live System Variables (Ontologia)
 
-| Variable | Value | Scope | Updated |
-|----------|-------|-------|---------|
-| `active_repos` | 89 | global | 2026-04-14 |
-| `archived_repos` | 54 | global | 2026-04-14 |
-| `ci_workflows` | 107 | global | 2026-04-14 |
-| `code_files` | 0 | global | 2026-04-14 |
-| `dependency_edges` | 60 | global | 2026-04-14 |
-| `operational_organs` | 10 | global | 2026-04-14 |
-| `published_essays` | 29 | global | 2026-04-14 |
-| `repos_with_tests` | 0 | global | 2026-04-14 |
-| `sprints_completed` | 33 | global | 2026-04-14 |
-| `test_files` | 0 | global | 2026-04-14 |
-| `total_organs` | 10 | global | 2026-04-14 |
-| `total_repos` | 145 | global | 2026-04-14 |
-| `total_words_formatted` | 0 | global | 2026-04-14 |
-| `total_words_numeric` | 0 | global | 2026-04-14 |
-| `total_words_short` | 0K+ | global | 2026-04-14 |
+| Variable                | Value | Scope  | Updated    |
+| ----------------------- | ----- | ------ | ---------- |
+| `active_repos`          | 89    | global | 2026-04-14 |
+| `archived_repos`        | 54    | global | 2026-04-14 |
+| `ci_workflows`          | 107   | global | 2026-04-14 |
+| `code_files`            | 0     | global | 2026-04-14 |
+| `dependency_edges`      | 60    | global | 2026-04-14 |
+| `operational_organs`    | 10    | global | 2026-04-14 |
+| `published_essays`      | 29    | global | 2026-04-14 |
+| `repos_with_tests`      | 0     | global | 2026-04-14 |
+| `sprints_completed`     | 33    | global | 2026-04-14 |
+| `test_files`            | 0     | global | 2026-04-14 |
+| `total_organs`          | 10    | global | 2026-04-14 |
+| `total_repos`           | 145   | global | 2026-04-14 |
+| `total_words_formatted` | 0     | global | 2026-04-14 |
+| `total_words_numeric`   | 0     | global | 2026-04-14 |
+| `total_words_short`     | 0K+   | global | 2026-04-14 |
 
 Metrics: 9 registered | Observations: 32128 recorded
 Resolve: `organvm ontologia status` | Refresh: `organvm refresh`
-
 
 ## System Density (auto-generated)
 
 AMMOI: 58% | Edges: 42 | Tensions: 33 | Clusters: 5 | Adv: 23 | Events(24h): 32336
 Structure: 8 organs / 145 repos / 1654 components (depth 17) | Inference: 98% | Organs: META-ORGANVM:65%, ORGAN-I:53%, ORGAN-II:48%, ORGAN-III:54% +5 more
 Last pulse: 2026-04-14T21:31:36 | Δ24h: -1.0% | Δ7d: n/a
-
 
 ## Dialect Identity (Trivium)
 
@@ -194,7 +193,6 @@ Strongest translations: III (formal), IV (formal), META (formal)
 
 Scan: `organvm trivium scan I <OTHER>` | Matrix: `organvm trivium matrix` | Synthesize: `organvm trivium synthesize`
 
-
 ## Logos Documentation Layer
 
 **Status:** MISSING | **Symmetry:** 0.5 (GHOST)
@@ -202,32 +200,24 @@ Scan: `organvm trivium scan I <OTHER>` | Matrix: `organvm trivium matrix` | Synt
 Nature demands a documentation counterpart. This formation maintains its narrative record in `docs/logos/`.
 
 ### The Tetradic Counterpart
+
 - **[Telos (Idealized Form)](../docs/logos/telos.md)** — The dream and theoretical grounding.
 - **[Pragma (Concrete State)](../docs/logos/pragma.md)** — The honest account of what exists.
 - **[Praxis (Remediation Plan)](../docs/logos/praxis.md)** — The attack vectors for evolution.
 - **[Receptio (Reception)](../docs/logos/receptio.md)** — The account of the constructed polis.
 
 ### Alchemical I/O
+
 - **[Source & Transmutation](../docs/logos/alchemical-io.md)** — Narrative of inputs, process, and returns.
 
-
-
-*Compliance: Implementation exists without record.*
+_Compliance: Implementation exists without record._
 
 <!-- ORGANVM:AUTO:END -->
 
-
-
-
-
-
-
-
-
-
-
 ## ⚡ Conductor OS Integration
+
 This repository is a managed component of the ORGANVM meta-workspace.
+
 - **Orchestration:** Use `conductor patch` for system status and work queue.
 - **Lifecycle:** Follow the `FRAME -> SHAPE -> BUILD -> PROVE` workflow.
 - **Governance:** Promotions are managed via `conductor wip promote`.

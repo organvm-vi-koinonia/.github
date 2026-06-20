@@ -75,4 +75,4 @@ version 2.1, available at
 
 ---
 
-*Part of the [organvm eight-organ system](https://github.com/meta-organvm)*
+_Part of the [organvm eight-organ system](https://github.com/meta-organvm)_

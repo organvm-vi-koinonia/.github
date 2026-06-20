@@ -14,15 +14,15 @@ _Community infrastructure and facilitation tools_
 
 ## Purpose
 
-ORGAN-VI houses the community infrastructure for the [organvm eight-organ system](https://github.com/meta-organvm). Where other organs produce theory (I), art (II), products (III), governance (IV), documentation (V), and outreach (VII), ORGAN-VI creates the conditions for *encounter* — structured spaces where contributors, collaborators, and curious observers engage with the system's ideas through dialogue rather than consumption.
+ORGAN-VI houses the community infrastructure for the [organvm eight-organ system](https://github.com/meta-organvm). Where other organs produce theory (I), art (II), products (III), governance (IV), documentation (V), and outreach (VII), ORGAN-VI creates the conditions for _encounter_ — structured spaces where contributors, collaborators, and curious observers engage with the system's ideas through dialogue rather than consumption.
 
 The community organ operates on the principle that a creative-institutional system is incomplete without a participatory layer. Salons, reading groups, and collaborative workshops are not marketing activities (that's ORGAN-VII) or documentation (that's ORGAN-V) — they are generative spaces where the system's theoretical commitments are tested, challenged, and extended by people other than the original author.
 
 ## Philosophy
 
-The name *Koinonia* (κοινωνία) is drawn from classical Greek, where it denotes fellowship, communion, and shared participation in a common life. In Aristotle's political philosophy, koinonia describes the bonds that make a community more than a collection of individuals — it is the active practice of holding something in common. In early Christian usage, the term carried the weight of mutual obligation: participants in koinonia are not audience members but co-creators of the space they inhabit.
+The name _Koinonia_ (κοινωνία) is drawn from classical Greek, where it denotes fellowship, communion, and shared participation in a common life. In Aristotle's political philosophy, koinonia describes the bonds that make a community more than a collection of individuals — it is the active practice of holding something in common. In early Christian usage, the term carried the weight of mutual obligation: participants in koinonia are not audience members but co-creators of the space they inhabit.
 
-ORGAN-VI applies this concept to creative-institutional practice. Community here is not an afterthought bolted onto a production system. It is *infrastructure* — as essential as the governance layer (ORGAN-IV) or the theoretical foundations (ORGAN-I). The conviction is that ideas sharpened only by their author become brittle. Salons and reading groups introduce the friction of other perspectives, the generosity of collaborative interpretation, and the accountability that comes from explaining your work to someone who did not build it.
+ORGAN-VI applies this concept to creative-institutional practice. Community here is not an afterthought bolted onto a production system. It is _infrastructure_ — as essential as the governance layer (ORGAN-IV) or the theoretical foundations (ORGAN-I). The conviction is that ideas sharpened only by their author become brittle. Salons and reading groups introduce the friction of other perspectives, the generosity of collaborative interpretation, and the accountability that comes from explaining your work to someone who did not build it.
 
 This is community as creative infrastructure: the deliberate construction of spaces where encounter is possible.
 
@@ -36,12 +36,12 @@ ORGAN-VI is **operational**. The shared database layer is built with models, mig
 
 **App repos:**
 
-| Repo | Role | Status |
-|------|------|--------|
-| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub) | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | PUBLIC_PROCESS (flagship) — [deployed](https://community-hub-8p8t.onrender.com) |
-| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive) | Transcription pipeline, taxonomy, session archival | PUBLIC_PROCESS |
-| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum) | Multi-week reading programs with discussion guides | PUBLIC_PROCESS |
-| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains | PUBLIC_PROCESS |
+| Repo                                                                                              | Role                                                                                    | Status                                                                          |
+| ------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| [`community-hub`](https://github.com/organvm-vi-koinonia/community-hub)                           | FastAPI portal — salon archive, curricula, search, feeds, live rooms, adaptive syllabus | PUBLIC_PROCESS (flagship) — [deployed](https://community-hub-8p8t.onrender.com) |
+| [`salon-archive`](https://github.com/organvm-vi-koinonia/salon-archive)                           | Transcription pipeline, taxonomy, session archival                                      | PUBLIC_PROCESS                                                                  |
+| [`reading-group-curriculum`](https://github.com/organvm-vi-koinonia/reading-group-curriculum)     | Multi-week reading programs with discussion guides                                      | PUBLIC_PROCESS                                                                  |
+| [`adaptive-personal-syllabus`](https://github.com/organvm-vi-koinonia/adaptive-personal-syllabus) | AI-personalized learning paths across organ domains                                     | PUBLIC_PROCESS                                                                  |
 
 **Shared library:** [`koinonia-db`](https://github.com/organvm-vi-koinonia/koinonia-db) — SQLAlchemy models, Alembic migrations, seed data (PUBLIC_PROCESS)
 
@@ -63,15 +63,15 @@ Collaborative close reading of the system's foundational documents, academic ref
 
 The organvm system spans 101 repositories across 8 organizations.
 
-| Organ | Relationship to ORGAN-VI |
-|-------|--------------------------|
-| I (Theory) | Provides intellectual content for salons and reading groups |
-| II (Art) | Supplies demonstrations, performances, and experiential material |
-| III (Commerce) | Potential venue for user feedback sessions and product community |
-| IV (Orchestration) | Defines governance rules for community participation |
-| V (Public Process) | Documents community outcomes and methodology |
-| VII (Marketing) | Amplifies community events and outcomes |
-| VIII (Meta) | ORGAN-VI reports to the meta-org umbrella |
+| Organ              | Relationship to ORGAN-VI                                         |
+| ------------------ | ---------------------------------------------------------------- |
+| I (Theory)         | Provides intellectual content for salons and reading groups      |
+| II (Art)           | Supplies demonstrations, performances, and experiential material |
+| III (Commerce)     | Potential venue for user feedback sessions and product community |
+| IV (Orchestration) | Defines governance rules for community participation             |
+| V (Public Process) | Documents community outcomes and methodology                     |
+| VII (Marketing)    | Amplifies community events and outcomes                          |
+| VIII (Meta)        | ORGAN-VI reports to the meta-org umbrella                        |
 
 **Dependency direction:** ORGAN-VI consumes from I, II, III (no back-edges). Community activities respond to what the system produces; they do not dictate upstream organ priorities.
 
@@ -83,12 +83,11 @@ The organvm system spans 101 repositories across 8 organizations.
 **System:** [organvm eight-organ system](https://github.com/meta-organvm)
 **Author:** [@4444J99](https://github.com/4444J99)
 
-*ORGAN-VI Status Update 2026-02-24 — Promoted to PUBLIC_PROCESS (System-Wide Activation Sprint)*
+_ORGAN-VI Status Update 2026-02-24 — Promoted to PUBLIC_PROCESS (System-Wide Activation Sprint)_
 
-*Activation Audit 2026-06-18 — actually-live; ship-now; org profile re-probed HTTP 200*
+_Activation Audit 2026-06-18 — actually-live; ship-now; org profile re-probed HTTP 200_
 
-<!-- PORTFOLIO-HUB-START -->
----
+## <!-- PORTFOLIO-HUB-START -->
 
 <div align="center">
 
